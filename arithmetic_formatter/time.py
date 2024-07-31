@@ -50,33 +50,25 @@ def add_time(start, duration, day = ''):
     # Adding munutes on the hour
     if minutes_duration >= 60:
         hour_current += 1
-        minutes_future = cumulative_minutes % 60
+    minutes_future = cumulative_minutes % 60
 
     # Adding hour on the hour
-    end_hours = (int(hour_current) + int(duration_hours)) % 12
+    end_hours = (int(hour_current) + int(duration_hours_org)) % 12
     number_of_time_flips = int((starting_hours + duration_hours_org) / 12)
     
     time_stamp = time_flip[time_stamp] if number_of_time_flips % 2 == 1 else time_stamp
-
-    
-
-
-
-
-
     
     # Add days - this is working now
     if day:
         day = day.lower()
         index = int((day_index[day]) + days)
-        new_day = day_of_week_array[index]
+    new_day = day_of_week_array[index]
 
 
-    time_now = f'{time_notation_hour}, {time_notation_minutes} {time_stamp}' 
- #   actual_hour_on_day =  cumulative_minutes // days To calculate hour on day
+    time_now = f'{end_hours} : {minutes_future} {time_stamp}'
 
-    print(f'{end_hours} : {minutes_future} {time_stamp}')
- 
-    #return new_time
+    print(time_now)
+    print(duration_hours_org)
+    print(hour_current)
 
-add_time("11:00 PM", '06:05', 'Monday')
+add_time("11:00 PM", '2:55', 'Monday')
