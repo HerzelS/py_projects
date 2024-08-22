@@ -38,10 +38,10 @@ def arithmetic_arranger(problems, show_answers=False):
         else:
             answer = int(operand1) - int(operand2)
 
-        line1 =  seperator_spaces + operand1.rjust(longest + 2)               #line 1
-        line2 =  seperator_spaces + operator + ' ' + operand2.rjust(longest)  #line 2
+        line1 = seperator_spaces + operand1.rjust(longest + 2)               #line 1
+        line2 = seperator_spaces + operator + ' ' + operand2.rjust(longest)  #line 2
         line3 = seperator_spaces + '-' * (longest + 2)                        #line 3
-        line4 =  seperator_spaces + str(answer).rjust(longest + 2)            #line 4
+        line4 = seperator_spaces + str(answer).rjust(longest + 2)            #line 4
         output['line1'] += line1 
         output['line2'] += line2 
         output['line3'] += line3 
@@ -56,4 +56,4 @@ def arithmetic_arranger(problems, show_answers=False):
 
     return problems
 
-arithmetic_arranger(["3801 - 2", "123 + 49"])
+arithmetic_arranger(["3801 - 2", "123 + 49"]) 
