@@ -4,7 +4,7 @@
 Welcome aboard developers (both apsiring and seasoned or those who are somewhere in between). Here you will find Python scripts which you are most welcome to contribute to. You can contribute by submitting your own scripts, also written in Python, which you think would be great to share.
 
 ## Contributing
-You are welcome to contribute as per the guidlines [HERE](https://github.com/larymak/Python-project-Scripts/blob/main/CONTRIBUTING.md). 
+You are welcome to contribute.
 
 ## Instructions
 - Fork this repository
